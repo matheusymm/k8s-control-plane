@@ -1,0 +1,7 @@
+server:
+  replicaCount: 3
+  service:
+    type: NodePort
+    nodePort: 30600
+alertmanager:
+  enabled: true
