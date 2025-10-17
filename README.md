@@ -7,9 +7,9 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 
 helm repo add grafana https://grafana.github.io/helm-charts
 
-helm install prometheus prometheus-community/prometheus -f prometheus/values.yml --namespace monitoring --create-namespace
+helm install prometheus prometheus-community/prometheus -f prometheus/values.yaml --namespace monitoring --create-namespace
 
-helm install grafana grafana/grafana -f grafana/values.yml --namespace monitoring
+helm install grafana grafana/grafana -f grafana/values.yaml --namespace monitoring
 
 kubectl get pods -n monitoring
 ```
